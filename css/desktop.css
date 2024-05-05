@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template:
+      'header header header header'
+      '. . . .'
+      '. img img img'
+      '. img img img'
+      'rep rep contact contact'
+      'footer footer footer footer';
+  }
+
+  .item1{
+    grid-area: header; 
+  }                                                           /*header/nav section*/
+
+  .item2{                                      /*"what we represent" section*/
+    grid-area: rep;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  #learnmore{                                        /*blue button/form section */
+    border-radius: 20px;
+    background-color: darkblue;
+    padding: 10px 20px;
+    color:aliceblue;
+    font-family: "Oswald";
+    font-weight: 500px;
+    transition: 0.8s ease;
+    font-family: "Kanit",Verdana, Tahoma, sans-serif;
+  }
+  
+  #learnmore:hover{
+    background-color: rgb(14, 2, 245);
+  }
+
+  .item3{                                /*get into contact with us! button/form section*/
+    grid-area: contact;       
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 20px;  
+    overflow: hidden;
+    max-width: 100%;
+  }  
+                 
+  .item4{      
+    display: grid;                                  /*imgs*/
+    grid-area: img;
+    width:100%;
+    justify-content: center;                     /**/
+    align-self: center;
+  }                                             
+
+  img{
+    width: 85%;
+    height: 300px;
+    justify-content: center;
+  }
+
+  footer{
+    background-color: rgb(23, 0, 128);
+    color: white;
+    font-family: "Oswald", 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+    padding: 20px 20px;
+  }
+  
+  p{
+    font-family: "Kanit",Verdana, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  h4{
+  font-family: "Oswald", 'Times New Roman', Times, serif;
+  font-weight: 400;
+  }
+  
+  h3{
+  font-family: "Oswald", 'Times New Roman', Times, serif;
+  color: black;
+  padding: 10px;
+  }

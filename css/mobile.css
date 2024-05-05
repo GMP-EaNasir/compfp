@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template:
+      'header header header header'
+      '. img img .'
+      'info info info info'
+      'rep rep rep rep'
+      'footer footer footer footer';
+  }
+
+  .item1{
+    grid-area: header; 
+  }                                                           /*header/nav section*/
+
+  .item2{                                      /*"what we represent" section*/
+    grid-area: rep;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #learnmore{                                           /*blue button/form section */
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color:aliceblue;
+    font-family: "Oswald";
+    font-weight: 500px;
+    transition: 0.8s ease;
+    font-family: "Kanit",Verdana, Tahoma, sans-serif;
+  }
+  
+  #learnmore:hover{
+    background-color: rgb(14, 2, 245);
+  }
+  
+  .item3{                                /*Info on Our Slavic CLub*/
+    grid-area: info;       
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 20px;  
+  }  
+                 
+  .item4{      
+    display: grid;                                  /*imgs*/
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    justify-content: center;                     /**/
+    align-self: center;
+    padding: 20px;
+  }                                             
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  
+footer{
+    background-color: rgb(23, 0, 128);
+    color: white;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0px;
+    padding: 25px 25px;
+}
+
+footer{
+  background-color: rgb(23, 0, 128);
+  color: white;
+  font-family: "Oswald", 'Times New Roman', Times, serif;
+  margin: 0px;
+  padding: 20px 20px;
+}
+
+p{
+  font-family: "Kanit",Verdana, Tahoma, sans-serif;
+  padding: 10px;
+  text-align: left;
+  font-weight: 400;
+}
+
+h4{
+font-family: "Oswald", 'Times New Roman', Times, serif;
+}
+
+h3{
+font-family: "Oswald", 'Times New Roman', Times, serif;
+color: black;
+padding: 10px;
+}

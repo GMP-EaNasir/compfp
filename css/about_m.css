@@ -1,0 +1,132 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template:
+      'header header header header'
+      'rep rep rep rep'
+      'submit submit submit submit'
+      '. img img .'
+      'footer footer footer footer';
+  }
+
+  .item1{
+    grid-area: header; 
+  }                                                           /*header/nav section*/
+
+  .item2{                                      /*"about our club" section*/
+    grid-area: rep;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  .item3{                                /*Section about our exec team*/
+    grid-area: submit;       
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 20px;
+    
+  }  
+                 
+  .item4{      
+    display: grid;                                  /*imgs*/
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    justify-content: center;                     /**/
+    align-self: center;
+  }                                             
+
+  .containerp{                                  /*keeps our previous event flyers in order*/                                                                                   
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: 
+    '. pysanky .'
+    '. birchbark .'
+    '. pierogi .';
+    padding: 20px;
+    width: 440px;
+    margin: 15px;
+    gap: 23px;
+    
+  }
+
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .pysanky{
+  grid-area: pysanky;
+  justify-content: center;
+  max-width: 700px;
+
+  }
+  
+    .pysanky:hover {
+      transform: scale(1.05);
+      transition: 1s;
+    }
+  
+  .birchbark{
+    grid-area:birchbark;
+    justify-content: center;
+    max-width: 700px;
+
+    /*width: 20px;*/
+  }
+  
+    .birchbark:hover {
+      transform: scale(1.05);
+      transition: 1s;
+    }
+  
+  .pierogi{
+    grid-area: pierogi;
+    justify-content: center;
+    max-width: 700px;
+    /*width: 20px;*/
+  }
+  
+    .pierogi:hover {
+      transform: scale(1.05);
+      transition: 1s;
+    }
+
+footer{
+    background-color: rgb(23, 0, 128);
+    color: white;
+    font-family: "Oswald", 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+    padding: 20px 20px;
+}
+
+
+#exec{                                                               /*exec team positions font section*/
+  font-family: "Kanit", Verdana, Tahoma, sans-serif;
+}
+
+p{
+    font-family: "Kanit",Verdana, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+}
+
+h4{                                                                   
+  font-family: "Oswald", 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+h3{
+  font-family: "Oswald", 'Times New Roman', Times, serif;
+  color: black;
+  padding: 10px;
+}
